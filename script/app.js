@@ -1,14 +1,4 @@
 // JavaScript untuk menyembunyikan loading screen setelah konten dimuat
-window.addEventListener("load", function () {
-  const loadingScreen = document.getElementById("loading-screen");
-  const mainContent = document.getElementById("main-content");
-
-  // Sembunyikan loading screen
-  loadingScreen.style.display = "none";
-
-  // Tampilkan konten utama
-  mainContent.style.display = "block";
-});
 
 // scroll Sections Active Links
 let menuIcon = document.querySelector("#menu-icon");
