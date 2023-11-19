@@ -14,23 +14,7 @@
   --main-color: #22f0df;
 }
 /* utk loading screen */
-.loading-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--bg-color); /* Opacity background */
-  z-index: 9999; /* Make sure it's on top of other elements */
-}
 
-.loading-container img {
-  max-width: 100px; /* Adjust the size of the loading.gif as needed */
-  max-height: 100px;
-}
 /* style main */
 html {
   font-size: 62.5%;
@@ -41,6 +25,9 @@ html {
 body {
   background: var(--bg-color);
   color: var(--text-color);
+}
+body.active {
+  background-image: url(img/loader.gif);
 }
 section {
   min-height: 100vh;
